@@ -1,0 +1,469 @@
+{
+  "id": "4dfe66ad-0d88-4623-8e9f-d75949faa2a5",
+  "version": "2.0",
+  "name": "US4_chatbot",
+  "url": "https://tobeto.com/giris",
+  "tests": [{
+    "id": "e84394d8-636d-4028-b5e8-4bce8d139caf",
+    "name": "test_chatbot_open_close",
+    "commands": [{
+      "id": "740aec22-b73e-41e3-8e8c-2a606c4c144a",
+      "comment": "",
+      "command": "open",
+      "target": "https://tobeto.com/giris",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9bec85e7-aff8-4c84-8890-9bc0c9fe44d3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c207e59-f1da-4af4-a832-4e94381ebf46",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=8",
+      "targets": [
+        ["index=8"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6172fbd-5da7-4973-8dde-0c86f6aee8e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.exw-open-launcher__container",
+      "targets": [
+        ["css=.exw-open-launcher__container", "css:finder"],
+        ["xpath=//button[@id='launcher']/div", "xpath:idRelative"],
+        ["xpath=//button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54504a65-914f-4d27-bd48-8967ec5f799f",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb1ee46a-5786-4c1d-a3dd-16d684b30dcb",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=7",
+      "targets": [
+        ["index=7"]
+      ],
+      "value": ""
+    }, {
+      "id": "58d96d0a-7998-4097-b04d-877dbb5e60da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.exw-minimize-button",
+      "targets": [
+        ["css=.exw-minimize-button", "css:finder"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b5bb38bb-3417-4517-b880-4be1657f0248",
+    "name": "test_chatbot_message",
+    "commands": [{
+      "id": "9fa62270-0750-4da2-a33c-09e437b2480a",
+      "comment": "",
+      "command": "open",
+      "target": "https://tobeto.com/giris",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f717be23-5aa0-48ab-8507-fb6df1f88c14",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e252036c-436b-475e-9be1-19d81555ac8c",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=8",
+      "targets": [
+        ["index=8"]
+      ],
+      "value": ""
+    }, {
+      "id": "adbcfdfc-32f8-4058-8268-d619945ecb43",
+      "comment": "",
+      "command": "click",
+      "target": "css=.exw-open-launcher__container",
+      "targets": [
+        ["css=.exw-open-launcher__container", "css:finder"],
+        ["xpath=//button[@id='launcher']/div", "xpath:idRelative"],
+        ["xpath=//button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea934abd-ee44-4d9d-8519-880b91d1ec3c",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "67fa2854-d57f-4f4e-a58a-519a7e171c6d",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=7",
+      "targets": [
+        ["index=7"]
+      ],
+      "value": ""
+    }, {
+      "id": "6088ab13-ea1e-4726-bf43-f64e5f9822a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//div[@id='exw-messages']/div[2]/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2136506-699d-4ae7-b61a-a0ed7aa4b35c",
+      "comment": "",
+      "command": "type",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//div[@id='exw-messages']/div[2]/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "pair2 tobeto"
+    }, {
+      "id": "39756da3-445a-49bd-9dd5-6c0a5811bdbd",
+      "comment": "",
+      "command": "click",
+      "target": "css=svg:nth-child(2) > path:nth-child(2)",
+      "targets": [
+        ["css=svg:nth-child(2) > path:nth-child(2)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "49165d76-42fb-4906-85dc-0198990bf71b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.exw-response:nth-child(1) .exw-sender-response",
+      "targets": [
+        ["css=.exw-response:nth-child(1) .exw-sender-response", "css:finder"],
+        ["xpath=//div[@id='exw-messages']/div[3]/div/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "Memnun oldum pair2 tobeto, Sana hangi konuda yardımcı olmamı istersin?"
+    }, {
+      "id": "27e0f0ce-42b5-4805-a9fe-99fcff43bcf5",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.exw-reply:nth-child(1)",
+      "targets": [
+        ["css=.exw-reply:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='exw-messages']/div[3]/div/div/div/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "68015fef-90eb-4f95-a1ff-4051423b864b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.exw-reply:nth-child(1)",
+      "targets": [
+        ["css=.exw-reply:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='exw-messages']/div[3]/div/div/div/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2198e9c-3f5a-487e-9672-f33098a6f31e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=strong:nth-child(1)",
+      "targets": [
+        ["css=strong:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='exw-messages']/div[5]/div/div/div/div/div/p/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'üniversite öğrencileri, profesyoneller, işini/mesleğini')]", "xpath:innerText"]
+      ],
+      "value": "üniversite öğrencileri, profesyoneller, işini/mesleğini"
+    }, {
+      "id": "ae21d1db-aae0-465c-accb-17f3804dc44f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.exw-group-message:nth-child(5) > .exw-message:nth-child(2) p",
+      "targets": [
+        ["css=.exw-group-message:nth-child(5) > .exw-message:nth-child(2) p", "css:finder"],
+        ["xpath=//div[@id='exw-messages']/div[5]/div[2]/div/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/div/div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Tobeto’da ihtiyaçların ve kaynaklarına göre öğrenim yolculuğunu sen tasarlarsın. Tobeto değerlendirme araçlarıyla kendini test edebilirsin.')]", "xpath:innerText"]
+      ],
+      "value": "Tobeto’da ihtiyaçların ve kaynaklarına göre öğrenim yolculuğunu sen tasarlarsın. Tobeto değerlendirme araçlarıyla kendini test edebilirsin."
+    }, {
+      "id": "efeff3cb-c33a-4ecb-88d5-6a387989045d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.exw-message:nth-child(3) .exw-sender-response",
+      "targets": [
+        ["css=.exw-message:nth-child(3) .exw-sender-response", "css:finder"],
+        ["xpath=//div[@id='exw-messages']/div[5]/div[3]/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div[3]/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": "Bunları da merak ediyor olabilirsiniz. 👀"
+    }]
+  }, {
+    "id": "9f9415b8-485c-4ba5-bf38-7287d9b84f48",
+    "name": "test_chatbot_chat_end",
+    "commands": [{
+      "id": "45ac8af7-deed-406d-a5df-cbf828c4bee7",
+      "comment": "",
+      "command": "open",
+      "target": "https://tobeto.com/giris",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "266a2560-10bd-4b4b-b0d8-4e607ca9dafd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7762961c-6f4f-4038-9b32-ab6069fb678d",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=7",
+      "targets": [
+        ["index=7"]
+      ],
+      "value": ""
+    }, {
+      "id": "f3d98fbb-00f3-4570-81d9-2648c4ffebc8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.exw-open-launcher__container",
+      "targets": [
+        ["css=.exw-open-launcher__container", "css:finder"],
+        ["xpath=//button[@id='launcher']/div", "xpath:idRelative"],
+        ["xpath=//button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cef891a-36e2-4898-a035-d6b79519a432",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee1528f6-a1a5-414b-bd76-03b07d2a9f95",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=6",
+      "targets": [
+        ["index=6"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0fc2353-c3ed-432c-9f18-dd753dced120",
+      "comment": "",
+      "command": "click",
+      "target": "css=.exw-end-session-button",
+      "targets": [
+        ["css=.exw-end-session-button", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b20b7dc-4949-457a-9142-77c1117ec70d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.finishSessionCheckButtons > button:nth-child(1)",
+      "targets": [
+        ["css=.finishSessionCheckButtons > button:nth-child(1)", "css:finder"],
+        ["xpath=//body[@id='exw-conversation-frame-body']/div/div/div/div/div/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Evet')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a62efb9-c05f-4b45-8063-c7f468f279fe",
+      "comment": "",
+      "command": "click",
+      "target": "id=surveyTextArea",
+      "targets": [
+        ["id=surveyTextArea", "id"],
+        ["css=#surveyTextArea", "css:finder"],
+        ["xpath=//textarea[@id='surveyTextArea']", "xpath:attributes"],
+        ["xpath=//form[@id='surveyForm']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88531804-9e7f-4e42-8a0a-91e41d9bd6eb",
+      "comment": "",
+      "command": "type",
+      "target": "id=surveyTextArea",
+      "targets": [
+        ["id=surveyTextArea", "id"],
+        ["css=#surveyTextArea", "css:finder"],
+        ["xpath=//textarea[@id='surveyTextArea']", "xpath:attributes"],
+        ["xpath=//form[@id='surveyForm']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Teşekkürler"
+    }, {
+      "id": "772a0b6f-b26b-441e-9a22-7db210050b97",
+      "comment": "",
+      "command": "click",
+      "target": "id=surveyBtn",
+      "targets": [
+        ["id=surveyBtn", "id"],
+        ["css=#surveyBtn", "css:finder"],
+        ["xpath=//button[@id='surveyBtn']", "xpath:attributes"],
+        ["xpath=//form[@id='surveyForm']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Gönder')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "01326483-7bbe-466d-92cd-6f4835115d5b",
+    "name": "test_chatbot_emoji_file",
+    "commands": [{
+      "id": "f20f38be-7fed-463c-b26d-a592cbee880a",
+      "comment": "",
+      "command": "open",
+      "target": "https://tobeto.com/giris",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5740f670-198c-45bb-a806-827108e3dbd2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "336f358e-8ce7-46c7-841d-89f39e782e26",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=7",
+      "targets": [
+        ["index=7"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ee5e0d8-bf43-4e4b-a33b-39471fead4d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.exw-open-launcher__container",
+      "targets": [
+        ["css=.exw-open-launcher__container", "css:finder"],
+        ["xpath=//button[@id='launcher']/div", "xpath:idRelative"],
+        ["xpath=//button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8161b762-fb0e-4f68-8859-b239884064ff",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "f68f9f5a-886a-4321-9ac2-985bd24104b1",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=6",
+      "targets": [
+        ["index=6"]
+      ],
+      "value": ""
+    }, {
+      "id": "96910408-6210-4f89-8484-8a65ca87727e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.exw-add-emoji",
+      "targets": [
+        ["css=.exw-add-emoji", "css:finder"],
+        ["xpath=//a[@type='button']", "xpath:attributes"],
+        ["xpath=//body[@id='exw-conversation-frame-body']/div/div/div/div[3]/form/div/a", "xpath:idRelative"],
+        ["xpath=//form/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6164b46d-6707-48eb-9efe-a8b5d9c569cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=emoji-picker",
+      "targets": [
+        ["css=emoji-picker", "css:finder"],
+        ["xpath=//body[@id='exw-conversation-frame-body']/div/div/div/div[3]/div/div/emoji-picker", "xpath:idRelative"],
+        ["xpath=//emoji-picker", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a68ec371-84c5-48d9-a5e4-ffda274564e4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=We run on Exairon",
+      "targets": [
+        ["linkText=We run on Exairon", "linkText"],
+        ["css=.exaironBanner", "css:finder"],
+        ["xpath=//div[@id='exw-messages']/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://exairon.com/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'  We run on Exairon')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aaae829f-49bc-499e-9ffa-d641cdf8b8b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.exw-add-file path",
+      "targets": [
+        ["css=.exw-add-file path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "5beaa214-0535-4c52-816c-a7bc4ecbb36c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.exw-drag-drop-select-button",
+      "targets": [
+        ["css=.exw-drag-drop-select-button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//body[@id='exw-conversation-frame-body']/div/div/div/div[3]/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Dosya Seçiniz')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "19271f18-b62b-4fe6-a3eb-341b3644a9d6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e84394d8-636d-4028-b5e8-4bce8d139caf"]
+  }],
+  "urls": [],
+  "plugins": []
+}
